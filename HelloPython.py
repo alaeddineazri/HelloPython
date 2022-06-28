@@ -141,6 +141,98 @@ areas_1= areas + ["poolhouse", 24.5]
 # Add garage data to areas_1, new list is areas_2
 areas_2 = areas_1 + ["garage", 15.45]
 
+# Create list areas
+areas = [11.25, 18.0, 20.0, 10.75, 9.50]
+
+# Create areas_copy
+areas_copy = list(areas)
+# or 
+areas_copy = areas[:]
+
+# Change areas_copy
+areas_copy[0] = 5.0
+
+# Print areas
+print(areas)
 
 
+# !Function 
 
+
+# Create lists first and second
+first = [11.25, 18.0, 20.0]
+second = [10.75, 9.50]
+
+# Paste together first and second: full
+full = first + second
+
+# Sort full in descending order: full_sorted
+full_sorted = sorted(full , reverse = True)
+
+# Print out full_sorted
+print (full_sorted)
+
+# !String Methods
+
+# string to experiment with: place
+place = "poolhouse"
+
+# Use upper() on place: place_up
+
+place_up = place.upper()
+
+# Print out place and place_up
+
+print(place)
+
+print(place_up)
+
+
+# !List Methods
+# Create list areas
+areas = [11.25, 18.0, 20.0, 10.75, 9.50]
+
+# Print out the index of the element 20.0
+
+print(areas.index(20.0))
+
+# Print out how often 9.50 appears in areas
+
+print(areas.count(9.50))
+
+
+# Create list areas
+areas = [11.25, 18.0, 20.0, 10.75, 9.50]
+
+# Use append twice to add poolhouse and garage size
+
+areas.append(24.5)
+areas.append(15.45)
+
+# Print out areas
+print(areas)
+
+# Reverse the orders of the elements in areas
+areas.reverse()
+
+# Print out areas
+print(areas )
+
+# Definition of radius
+r = 0.43
+
+
+#!Import package
+
+# Import the math package
+import math 
+pi = math.pi
+# Calculate C
+C = 2*pi*r
+
+# Calculate A
+A = pi*r*r
+
+# Build printout
+print("Circumference: " + str(C))
+print("Area: " + str(A))
